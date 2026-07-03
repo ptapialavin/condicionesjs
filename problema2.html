@@ -6,6 +6,83 @@
     <title>Problema2</title>
 </head>
 <body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .stickers-grid {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .sticker-card {
+            flex: 1;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+       
+        .sticker-img {
+            width: 130px;
+            height: 130px;
+            object-fit: contain; 
+        }
+
+        input[type="number"] {
+            width: 80%;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        .btn-verificar {
+            background-color: #f0f0f0;
+            border: 1px solid #a6a6a6;
+            padding: 6px 16px;
+            font-size: 0.9rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn-verificar:hover {
+            background-color: #e1e1e1;
+        }
+
+        .resultado-mensaje {
+            margin-top: 15px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            min-height: 24px;
+        }
+    </style>
+
     <div class="container">
     <h1>Problema 2</h1>
     <h2>Puedes llevar hasta 10 stickers en total</h2>
