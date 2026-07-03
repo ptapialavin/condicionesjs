@@ -1,71 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Problema 1</title>
-</head>
-<body>
-     <style>
-          body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f2f5;
-            font-family: Arial, sans-serif;
-            gap: 20px;
-        }
-        img {
-            cursor: pointer;
-            max-width: 400px;
-            border-radius: 8px;
-           
-            border: 2px solid transparent; 
-            transition: border-color 0.2s ease;
-        }
-        .estado-borde {
-            font-weight: bold;
-            color: #333;
-        }
+  </head>
+  <body>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f2f5;
+        font-family: Arial, sans-serif;
+        gap: 20px;
+      }
+      img {
+        cursor: pointer;
+        max-width: 400px;
+        border-radius: 8px;
+
+        border: 2px solid transparent;
+        transition: border-color 0.2s ease;
+      }
+      .estado-borde {
+        font-weight: bold;
+        color: #333;
+      }
     </style>
 
     <h1>Problema 1</h1>
-    <img class="imagen-tarjeta" src="https://picsum.photos/400/300" alt="Imagen de ejemplo">
-
+    <img
+      class="imagen-tarjeta"
+      src="https://picsum.photos/400/300"
+      alt="Imagen de ejemplo"
+    />
 
     <div class="estado-borde">El borde está: Sin aplicar</div>
 
     <script>
-        
-        const imagen = document.querySelector('.imagen-tarjeta');
-        const indicadorTexto = document.querySelector('.estado-borde');
+      const imagen = document.querySelector(".imagen-tarjeta");
+      const indicadorTexto = document.querySelector(".estado-borde");
 
-        
-        imagen.addEventListener('click', () => {
-            
-            
-            if (imagen.style.borderColor === 'red') {
-                
-                
-                imagen.style.borderColor = 'transparent';
-                
-              
-                indicadorTexto.innerHTML = 'El borde está: <span>Sin aplicar</span>';
-                
-            } else {
-                
-                
-                imagen.style.border = '2px solid red';
-                
-              
-                indicadorTexto.innerHTML = 'El borde está: <span style="color: red;">Aplicado (Rojo)</span>';
-            }
-        });
+      imagen.addEventListener("click", () => {
+        if (imagen.style.borderColor === "red") {
+          imagen.style.borderColor = "transparent";
+
+          indicadorTexto.innerHTML = "El borde está: <span>Sin aplicar</span>";
+        } else {
+          imagen.style.border = "2px solid red";
+
+          indicadorTexto.innerHTML =
+            'El borde está: <span style="color: red;">Aplicado (Rojo)</span>';
+        }
+      });
     </script>
-
-
-</body>
+  </body>
 </html>

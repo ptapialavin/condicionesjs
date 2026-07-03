@@ -1,141 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landingpage- Desafío 2. Condiciones</title>
-</head>
-<body>
-<style>
-        
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background-color: #fcfcfc;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background-color: #fcfcfc;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
 
-      
-        .landing-container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            flex: 1;
-        }
+      .landing-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        flex: 1;
+      }
 
-      
-        .brand-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 60px;
-        }
+      .brand-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px;
+      }
 
-        .logo-img {
-            height: 60px; 
-            object-fit: contain;
-        }
+      .logo-img {
+        height: 60px;
+        object-fit: contain;
+      }
 
+      .content-section {
+        text-align: center;
+        margin-bottom: 50px;
+      }
 
-        .content-section {
-            text-align: center;
-            margin-bottom: 50px;
-        }
+      .main-title {
+        color: #1b4d22;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
 
-        .main-title {
-            color: #1b4d22; 
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
+      .description {
+        font-size: 1.2rem;
+        color: #555;
+        line-height: 1.6;
+        max-width: 750px;
+        margin: 0 auto;
+      }
 
-        .description {
-            font-size: 1.2rem;
-            color: #555;
-            line-height: 1.6;
-            max-width: 750px;
-            margin: 0 auto;
-        }
+      .problems-grid {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
 
-        
-        .problems-grid {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            flex-wrap: wrap;
-            margin-top: 40px;
-        }
+      .btn-problem {
+        display: inline-block;
+        background-color: #1b4d22;
+        color: white;
+        text-decoration: none;
+        padding: 15px 30px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border-radius: 6px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition:
+          background-color 0.2s,
+          transform 0.2s;
+        min-width: 200px;
+        text-align: center;
+      }
 
-        .btn-problem {
-            display: inline-block;
-            background-color: #1b4d22;
-            color: white;
-            text-decoration: none;
-            padding: 15px 30px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            border-radius: 6px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: background-color 0.2s, transform 0.2s;
-            min-width: 200px;
-            text-align: center;
-        }
+      .btn-problem:hover {
+        background-color: #276e31;
+        transform: translateY(-2px);
+      }
 
-        .btn-problem:hover {
-            background-color: #276e31;
-            transform: translateY(-2px);
-        }
+      .btn-problem:active {
+        transform: translateY(0);
+      }
 
-        .btn-problem:active {
-            transform: translateY(0);
-        }
+      footer {
+        background-color: #111;
+        color: #aaa;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.95rem;
+        margin-top: auto;
+      }
 
-     
-        footer {
-            background-color: #111;
-            color: #aaa;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.95rem;
-            margin-top: auto;
-        }
-
-        footer strong {
-            color: #fff;
-        }
+      footer strong {
+        color: #fff;
+      }
     </style>
 
-
     <div class="landing-container">
-        
-        <header class="brand-header">
-            
-            <img class="logo-img" src="./assets/img/Logo-desafiolatam.png" alt="Logo Academia Desafío Latam">
-        </header>
+      <header class="brand-header">
+        <img
+          class="logo-img"
+          src="./assets/img/Logo-desafiolatam.png"
+          alt="Logo Academia Desafío Latam"
+        />
+      </header>
 
-       
-        <main class="content-section">
-            <h1 class="main-title">Desafío 2 - Condiciones</h1>
-            <p class="description">
-                En este desafío aplicamos los conocimientos sobre la manipulación del DOM y las instrucciones condicionales en JavaScript, resolviendo los problemas propuestos para reforzar el aprendizaje y práctica.Revisa las soluciones a los problemas propuestos a continuación:
-            </p>
+      <main class="content-section">
+        <h1 class="main-title">Desafío 2 - Condiciones</h1>
+        <p class="description">
+          En este desafío aplicamos los conocimientos sobre la manipulación del
+          DOM y las instrucciones condicionales en JavaScript, resolviendo los
+          problemas propuestos para reforzar el aprendizaje y práctica.Revisa
+          las soluciones a los problemas propuestos a continuación:
+        </p>
 
-            <div class="problems-grid">
-               
-                <a href="problema1.html" class="btn-problem">Problema 1: Bordes de Imagen</a>
-                <a href="problema2.html" class="btn-problem">Problema 2: Stickers</a>
-                <a href="problema3.html" class="btn-problem">Problema 3: Password</a>
-            </div>
-        </main>
+        <div class="problems-grid">
+          <a href="problema1.html" class="btn-problem"
+            >Problema 1: Bordes de Imagen</a
+          >
+          <a href="problema2.html" class="btn-problem">Problema 2: Stickers</a>
+          <a href="problema3.html" class="btn-problem">Problema 3: Password</a>
+        </div>
+      </main>
     </div>
 
-  
     <footer>
-        Desafío Latam | Desarrollado por: <strong>Patricio Tapia</strong>
+      Desafío Latam | Desarrollado por: <strong>Patricio Tapia</strong>
     </footer>
-
-</body>
+  </body>
 </html>

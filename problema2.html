@@ -1,151 +1,155 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Problema 2</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
 
-        .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;
-            max-width: 800px;
-            width: 100%;
-        }
+      .container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 800px;
+        width: 100%;
+      }
 
-        h2 {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
+      h2 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
 
-        .stickers-grid {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-        }
+      .stickers-grid {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+      }
 
-        .sticker-card {
-            flex: 1;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+      .sticker-card {
+        flex: 1;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
+      .sticker-img {
+        width: 130px;
+        height: 130px;
+        object-fit: contain;
+        margin-bottom: 15px;
+      }
 
-        .sticker-img {
-            width: 130px;
-            height: 130px;
-            object-fit: contain; 
-            margin-bottom: 15px;
-        }
+      input[type="number"] {
+        width: 80%;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 1rem;
+      }
 
-        input[type="number"] {
-            width: 80%;
-            padding: 6px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            text-align: center;
-            font-size: 1rem;
-        }
+      .btn-verificar {
+        background-color: #f0f0f0;
+        border: 1px solid #a6a6a6;
+        padding: 6px 16px;
+        font-size: 0.9rem;
+        border-radius: 4px;
+        cursor: pointer;
+      }
 
-        .btn-verificar {
-            background-color: #f0f0f0;
-            border: 1px solid #a6a6a6;
-            padding: 6px 16px;
-            font-size: 0.9rem;
-            border-radius: 4px;
-            cursor: pointer;
-        }
+      .btn-verificar:hover {
+        background-color: #e1e1e1;
+      }
 
-        .btn-verificar:hover {
-            background-color: #e1e1e1;
-        }
-
-        .resultado-mensaje {
-            margin-top: 15px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            min-height: 24px;
-        }
+      .resultado-mensaje {
+        margin-top: 15px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        min-height: 24px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Problema 2</h1>
+      <h2>Puedes llevar hasta 10 stickers en total</h2>
 
-<div class="container">
-    <h1>Problema 2</h1>
-    <h2>Puedes llevar hasta 10 stickers en total</h2>
-    
-    <div class="stickers-grid">
+      <div class="stickers-grid">
         <!-- Sticker 1: GitHub -->
         <div class="sticker-card">
-            <!-- Cambia 'github.png' por la ruta correcta si están dentro de una carpeta, ej: 'assets/github.png' -->
-            <img class="sticker-img" src="./assets/img/stickersgithub.webp" alt="Sticker GitHub Octocat">
-            <input type="number" id="inputSticker1" value="0" min="0">
+          <!-- Cambia 'github.png' por la ruta correcta si están dentro de una carpeta, ej: 'assets/github.png' -->
+          <img
+            class="sticker-img"
+            src="./assets/img/stickersgithub.webp"
+            alt="Sticker GitHub Octocat"
+          />
+          <input type="number" id="inputSticker1" value="0" min="0" />
         </div>
 
         <!-- Sticker 2: Slack -->
         <div class="sticker-card">
-            <img class="sticker-img" src="./assets/img/stickersslack.jpg" alt="Sticker Slack">
-            <input type="number" id="inputSticker2" value="0" min="0">
+          <img
+            class="sticker-img"
+            src="./assets/img/stickersslack.jpg"
+            alt="Sticker Slack"
+          />
+          <input type="number" id="inputSticker2" value="0" min="0" />
         </div>
 
         <!-- Sticker 3: Git -->
         <div class="sticker-card">
-            <img class="sticker-img" src="./assets/img/stickersgit.jpg" alt="Sticker Git">
-            <input type="number" id="inputSticker3" value="0" min="0">
+          <img
+            class="sticker-img"
+            src="./assets/img/stickersgit.jpg"
+            alt="Sticker Git"
+          />
+          <input type="number" id="inputSticker3" value="0" min="0" />
         </div>
+      </div>
+
+      <button class="btn-verificar" id="btnVerificar">Verificar</button>
+
+      <p class="resultado-mensaje" id="mensajeResultado"></p>
     </div>
 
+    <script>
+      const input1 = document.getElementById("inputSticker1");
+      const input2 = document.getElementById("inputSticker2");
+      const input3 = document.getElementById("inputSticker3");
+      const btnVerificar = document.getElementById("btnVerificar");
+      const mensajeResultado = document.getElementById("mensajeResultado");
 
-    <button class="btn-verificar" id="btnVerificar">Verificar</button>
-    
-    
-    <p class="resultado-mensaje" id="mensajeResultado"></p>
-</div>
-
-<script>
-    
-    const input1 = document.getElementById('inputSticker1');
-    const input2 = document.getElementById('inputSticker2');
-    const input3 = document.getElementById('inputSticker3');
-    const btnVerificar = document.getElementById('btnVerificar');
-    const mensajeResultado = document.getElementById('mensajeResultado');
-
-   
-    btnVerificar.addEventListener('click', () => {
-        
+      btnVerificar.addEventListener("click", () => {
         // Convertir strings a enteros (asigna 0 si el campo está vacío)
         // Math.max evita valores negativos si el usuario los teclea manualmente
         const cantidad1 = Math.max(0, parseInt(input1.value) || 0);
         const cantidad2 = Math.max(0, parseInt(input2.value) || 0);
         const cantidad3 = Math.max(0, parseInt(input3.value) || 0);
 
-   
         const totalStickers = cantidad1 + cantidad2 + cantidad3;
 
-        
         if (totalStickers > 10) {
-            mensajeResultado.textContent = 'Llevas demasiados stickers';
+          mensajeResultado.textContent = "Llevas demasiados stickers";
         } else if (totalStickers >= 0 && totalStickers <= 10) {
-            mensajeResultado.textContent = 'Llevas ' + totalStickers + ' stickers';
+          mensajeResultado.textContent =
+            "Llevas " + totalStickers + " stickers";
         } else {
-            mensajeResultado.textContent = 'Por favor, ingresa cantidades válidas';
+          mensajeResultado.textContent =
+            "Por favor, ingresa cantidades válidas";
         }
-    });
-</script>
-
-</body>
+      });
+    </script>
+  </body>
 </html>
