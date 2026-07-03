@@ -1,5 +1,3 @@
-# condicionesjs
-
 # Desafío 2 - Condiciones
 
 ## Descripción
