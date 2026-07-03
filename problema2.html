@@ -44,7 +44,7 @@
             align-items: center;
         }
 
-       
+
         .sticker-img {
             width: 130px;
             height: 130px;
@@ -89,32 +89,31 @@
     <h2>Puedes llevar hasta 10 stickers en total</h2>
     
     <div class="stickers-grid">
-        
+        <!-- Sticker 1: GitHub -->
         <div class="sticker-card">
-          
-            <img class="sticker-img" src="./assets/img/stickersgithub.webp" alt="Sticker GitHub">
+            <!-- Cambia 'github.png' por la ruta correcta si están dentro de una carpeta, ej: 'assets/github.png' -->
+            <img class="sticker-img" src="./assets/img/stickersgithub.webp" alt="Sticker GitHub Octocat">
             <input type="number" id="inputSticker1" value="0" min="0">
         </div>
 
-        
+        <!-- Sticker 2: Slack -->
         <div class="sticker-card">
             <img class="sticker-img" src="./assets/img/stickersslack.jpg" alt="Sticker Slack">
             <input type="number" id="inputSticker2" value="0" min="0">
         </div>
 
-        
+        <!-- Sticker 3: Git -->
         <div class="sticker-card">
             <img class="sticker-img" src="./assets/img/stickersgit.jpg" alt="Sticker Git">
             <input type="number" id="inputSticker3" value="0" min="0">
-        
- </div>
+        </div>
+    </div>
 
-    
+
     <button class="btn-verificar" id="btnVerificar">Verificar</button>
     
-   
+    
     <p class="resultado-mensaje" id="mensajeResultado"></p>
-
 </div>
 
 <script>
@@ -128,15 +127,16 @@
    
     btnVerificar.addEventListener('click', () => {
         
-   
+        // Convertir strings a enteros (asigna 0 si el campo está vacío)
+        // Math.max evita valores negativos si el usuario los teclea manualmente
         const cantidad1 = Math.max(0, parseInt(input1.value) || 0);
         const cantidad2 = Math.max(0, parseInt(input2.value) || 0);
         const cantidad3 = Math.max(0, parseInt(input3.value) || 0);
 
-       
+   
         const totalStickers = cantidad1 + cantidad2 + cantidad3;
 
-       
+        
         if (totalStickers > 10) {
             mensajeResultado.textContent = 'Llevas demasiados stickers';
         } else if (totalStickers >= 0 && totalStickers <= 10) {
