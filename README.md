@@ -8,7 +8,7 @@ El desafío tiene como objetivo validar conocimientos sobre la manipulación del
 
 ## 🚀 Link del Deploy
 
-🔗 **Deploy:**
+🔗 https://ptapialavin.github.io/condicionesjs/
 
 ---
 
