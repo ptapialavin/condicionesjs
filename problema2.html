@@ -1,121 +1,153 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PROPYME OFICIAL Información 4to Workshop 2026</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/img/PPCh Favicon.jpg">
-  </head>
-  <body>
-    <div class="grid-container">
-      <header class="main-header">
-        <div class="logo-container">
-          <img src="./assets/img/archivos.propyme-02_PNG.png" alt="Logo PP" />
-        </div>
-      
-        <button class="hamburger-menu" aria-label="Abrir menú" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <nav class="sidebar-nav" id="sidebarNav">
-          <ul class="menu-list">
-            <li>
-              <a href="https://drive.google.com/file/d/1rNNrZrL4kyvHDSHXg2KuawquTGC7Y5rK/view?usp=sharing" target="_blank">Presentación: “De la norma a la Acción. Cómo implementar la ley Karin en tu negocio"</a>   
-              </a>
-            </li>
-            <li>
-              <a href="https://drive.google.com/file/d/1xFfVHGiL6A_mQMxXNAh5ToPp6MPb1X5v/view" target="_blank">Presentación: "Megarreforma Tributaria. Estrategías prácticas para blindar el patrimonio de tu negocio"</a>   
-              </a>
-              
-            </li>
-            <li>
-              <a href="https://www.propyme.com/noticiaspymes/pymes-se-informan-mas-de-la-megarreforma-tributaria-y-ley-karin" target="_blank">Nota de Prensa
-              </a>
-            </li>
-            <li>
-              <a href="https://www.propyme.com/imagenespymes/images?date=2026-06-03T15:33:21Z target="_blank"> Galería
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/watch?v=IfXHK2Z0hLA">
-                Video de la Actividad
-              </a>
-            </li>
-            <li>
-              <a href="https://www.propyme.com/">
-                Página Web
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <main class="main-content">
-        <h1>
-        4° Workshop PROPYME:<strong><br>"La Ley Karin, Megarreforma Tributaria y el
-          blindaje del Patrimonio de las Pymes"<strong></strong></br>
-        </h1>
-
-        <section class="gallery-container">
-          <div class="gallery-item">
-            <img src="./assets/img/8.jpg" alt="Foto 1" />
-          </div>
-          <div class="gallery-item">
-            <img src="./assets/img/12.jpg" alt="Foto 2" />
-          </div>
-          <div class="gallery-item">
-            <img src="./assets/img/15.jpg" alt="Foto 3" />
-          </div>
-          <div class="gallery-item">
-            <img src="./assets/img/20.jpg" alt="Foto 4" />
-          </div>
-          <div class="gallery-item">
-            <img src="./assets/img/23.jpg" alt="Foto 5" />
-          </div>
-          <div class="gallery-item">
-            <img src="./assets/img/25.jpg" alt="Foto 6" />
-          </div>
-          <div class="gallery-item">
-            <img src="./assets/img/28.jpg" alt="Foto 7" />
-          </div>
-          <div class="gallery-item">
-            <img src="./assets/img/31.jpg" alt="Foto 8" />
-          </div>
-          <div class="gallery-item">
-            <img src="./assets/img/34.jpg" alt="Foto 9" />
-          </div>
-          <div class="gallery-item">
-            <img src="./assets/img/35.jpg" alt="Foto 10" />
-          </div>
-          <div class="gallery-item">
-            <img src="./assets/img/36.jpg" alt="Foto 11" />
-          </div>
-          <div class="gallery-item">
-            <img src="./assets/img/39.jpg" alt="Foto 12" />
-          </div>
-        </section>
-      </main>
-
-      <footer class="main-footer">
-        <div class="footer-logos-container">
-          <img src="./assets/img/footer-logos-propyme.jpg" alt="Logos Auspiciadores PROPYME" class="footer-blur-up">
-        </div>
-      </footer>
-      
-      <script
-        src="https://kit.fontawesome.com/a5c81475b7.js"
-        crossorigin="anonymous"
-      ></script>
-
-      <script>
-        function toggleMenu() {
-          const nav = document.getElementById('sidebarNav');
-          nav.classList.toggle('active');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 2</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-      </script>
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .stickers-grid {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .sticker-card {
+            flex: 1;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+       
+        .sticker-img {
+            width: 130px;
+            height: 130px;
+            object-fit: contain; 
+        }
+
+        input[type="number"] {
+            width: 80%;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        .btn-verificar {
+            background-color: #f0f0f0;
+            border: 1px solid #a6a6a6;
+            padding: 6px 16px;
+            font-size: 0.9rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn-verificar:hover {
+            background-color: #e1e1e1;
+        }
+
+        .resultado-mensaje {
+            margin-top: 15px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            min-height: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Problema 2</h1>
+    <h2>Puedes llevar hasta 10 stickers en total</h2>
+    
+    <div class="stickers-grid">
+        <!-- Sticker 1: GitHub -->
+        <div class="sticker-card">
+          
+            <img class="sticker-img" src="./assets/img/stickersgithub.webp" alt="Sticker GitHub Octocat">
+            <input type="number" id="inputSticker1" value="0" min="0">
+        </div>
+
+        <!-- Sticker 2: Slack -->
+        <div class="sticker-card">
+            <img class="sticker-img" src="./assets/img/stickersslack.jpg" alt="Sticker Slack">
+            <input type="number" id="inputSticker2" value="0" min="0">
+        </div>
+
+        <!-- Sticker 3: Git -->
+        <div class="sticker-card">
+            <img class="sticker-img" src="./assets/img/stickersgit.jpg" alt="Sticker Git">
+            <input type="number" id="inputSticker3" value="0" min="0">
+        </div>
     </div>
-  </body>
+
+    
+    <button class="btn-verificar" id="btnVerificar">Verificar</button>
+    
+   
+    <p class="resultado-mensaje" id="mensajeResultado"></p>
+</div>
+
+<script>
+    
+    const input1 = document.getElementById('inputSticker1');
+    const input2 = document.getElementById('inputSticker2');
+    const input3 = document.getElementById('inputSticker3');
+    const btnVerificar = document.getElementById('btnVerificar');
+    const mensajeResultado = document.getElementById('mensajeResultado');
+
+   
+    btnVerificar.addEventListener('click', () => {
+        
+      
+        const cantidad1 = Math.max(0, parseInt(input1.value) || 0);
+        const cantidad2 = Math.max(0, parseInt(input2.value) || 0);
+        const cantidad3 = Math.max(0, parseInt(input3.value) || 0);
+
+       
+        const totalStickers = cantidad1 + cantidad2 + cantidad3;
+
+        
+        if (totalStickers > 10) {
+            mensajeResultado.textContent = 'Llevas demasiados stickers';
+        } else if (totalStickers >= 0 && totalStickers <= 10) {
+            mensajeResultado.textContent = 'Llevas ' + totalStickers + ' stickers';
+        } else {
+            mensajeResultado.textContent = 'Por favor, ingresa cantidades válidas';
+        }
+    });
+</script>
+
+</body>
+</html>
+</body>
 </html>
