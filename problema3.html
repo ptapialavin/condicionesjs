@@ -122,6 +122,36 @@
     <p class="mensaje-resultado" id="mensajeResultado"></p>
 </div>
 
+<script>
+   
+    const digit1 = document.getElementById('select1');
+    const digit2 = document.getElementById('select2');
+    const digit3 = document.getElementById('select3');
+    const btnIngresar = document.getElementById('btnIngresar');
+    const mensajeResultado = document.getElementById('mensajeResultado');
+
+   
+    btnIngresar.addEventListener('click', () => {
+       
+        const passwordIngresado = digit1.value + digit2.value + digit3.value;
+
+       
+        if (passwordIngresado === '911') {
+            
+            mensajeResultado.textContent = 'password 1 correcto';
+            mensajeResultado.style.color = '#2e7d32'; // Color verde para indicar éxito
+        } else if (passwordIngresado === '714') {
+          
+            mensajeResultado.textContent = 'password 2 es correcto';
+            mensajeResultado.style.color = '#2e7d32'; 
+        } else {
+          
+            mensajeResultado.textContent = 'password incorrecto';
+            mensajeResultado.style.color = '#c62828'; // Color rojo para error
+        }
+    });
+</script>
+
 
 </body>
 </html>
