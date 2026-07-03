@@ -6,6 +6,109 @@
     <title>LandingPage- Desafío 2. Condiciones</title>
 </head>
 <body>
+<style>
+        
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #fcfcfc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+      
+        .landing-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            flex: 1;
+        }
+
+      
+        .brand-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .logo-img {
+            height: 60px; /* Ajusta la altura según las dimensiones de tu imagen */
+            object-fit: contain;
+        }
+
+
+        .content-section {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .main-title {
+            color: #1b4d22; /* Verde oscuro basado en la imagen de referencia */
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.6;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        
+        .problems-grid {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .btn-problem {
+            display: inline-block;
+            background-color: #1b4d22;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background-color 0.2s, transform 0.2s;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        .btn-problem:hover {
+            background-color: #276e31;
+            transform: translateY(-2px);
+        }
+
+        .btn-problem:active {
+            transform: translateY(0);
+        }
+
+     
+        footer {
+            background-color: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.95rem;
+            margin-top: auto;
+        }
+
+        footer strong {
+            color: #fff;
+        }
+    </style>
+
+
     <div class="landing-container">
         
         <header class="brand-header">
