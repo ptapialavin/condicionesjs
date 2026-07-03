@@ -38,6 +38,34 @@
 
     <div class="estado-borde">El borde está: Sin aplicar</div>
 
+    <script>
+        
+        const imagen = document.querySelector('.imagen-tarjeta');
+        const indicadorTexto = document.querySelector('.estado-borde');
+
+        
+        imagen.addEventListener('click', () => {
+            
+            
+            if (imagen.style.borderColor === 'red') {
+                
+                
+                imagen.style.borderColor = 'transparent';
+                
+              
+                indicadorTexto.innerHTML = 'El borde está: <span>Sin aplicar</span>';
+                
+            } else {
+                
+                
+                imagen.style.border = '2px solid red';
+                
+              
+                indicadorTexto.innerHTML = 'El borde está: <span style="color: red;">Aplicado (Rojo)</span>';
+            }
+        });
+    </script>
+
 
 </body>
 </html>
